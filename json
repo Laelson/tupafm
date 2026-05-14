@@ -9,7 +9,7 @@
   },
 
   "stream": {
-    "url": "https://stream.tupa.fm.br/stream",
+    "url": "https://centova4.transmissaodigital.com:20091/stream",
     "backup_url": "https://backup.tupa.fm.br/stream",
     "type": "icecast",
     "format": "mp3",
