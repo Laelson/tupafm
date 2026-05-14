@@ -1,4 +1,49 @@
 {
+  "radio": {
+    "name": "Tupã FM",
+    "slogan": "A rádio que conecta você",
+    "logo": "https://tupa.fm.br/assets/logo.png",
+    "background": "https://tupa.fm.br/assets/bg.jpg",
+    "cidade": "Tupã",
+    "estado": "SP"
+  },
+
+  "stream": {
+    "url": "https://stream.tupa.fm.br/stream",
+    "backup_url": "https://backup.tupa.fm.br/stream",
+    "type": "icecast",
+    "format": "mp3",
+    "bitrate": 128,
+    "metadata": true
+  },
+
+  "metadata": {
+    "provider": "icy",
+    "refresh_seconds": 10,
+    "fallback": {
+      "artist": "Tupã FM",
+      "title": "Ao vivo",
+      "cover": "https://tupa.fm.br/assets/default_cover.jpg"
+    }
+  },
+
+  "now_playing": {
+    "artist": "",
+    "title": "",
+    "program": "",
+    "cover": ""
+  },
+
+  "live": {
+    "is_live": true,
+    "dj": {
+      "name": "João Silva",
+      "photo": "https://tupa.fm.br/assets/dj.jpg",
+      "show": "Manhã Total",
+      "instagram": "https://instagram.com/joaosilva"
+    }
+  },
+
   "programming": [
     {
       "days": ["segunda", "terça", "quarta", "quinta", "sexta", "sábado"],
@@ -13,19 +58,14 @@
       "start": "13:00",
       "end": "14:30",
       "title": "Programa Céu e Campo",
-      "description": "Programa musical gauchesco com artistas locais e regionais. Interação via carta, telefone, site, aplicativo e redes sociais.",
-      "category": "musical",
-      "segments": [
-        {"start": "13:00", "end": "13:45"},
-        {"start": "13:45", "end": "14:30"}
-      ]
+      "description": "Programa musical gauchesco com interação dos ouvintes.",
+      "category": "musical"
     },
     {
       "days": ["segunda", "terça", "quarta", "quinta", "sexta"],
       "start": "14:35",
       "end": "16:00",
       "title": "Tupã às Suas Ordens",
-      "description": "Programa musical com pedidos ao vivo via telefone, site e redes sociais.",
       "category": "interativo"
     },
     {
@@ -33,7 +73,6 @@
       "start": "16:00",
       "end": "17:00",
       "title": "Peça e Ouça",
-      "description": "Pedidos musicais organizados para atender o maior número possível de ouvintes.",
       "category": "musical"
     },
     {
@@ -41,7 +80,6 @@
       "start": "17:00",
       "end": "17:55",
       "title": "Tupã Comunidade",
-      "description": "Programa de utilidade pública com avisos, previsão do tempo, entrevistas e participação comunitária.",
       "category": "comunitario"
     },
     {
@@ -49,7 +87,6 @@
       "start": "17:55",
       "end": "18:00",
       "title": "Oração da Ave Maria",
-      "description": "Momento religioso sob responsabilidade da Paróquia Mãe de Deus.",
       "category": "religioso"
     },
     {
@@ -57,7 +94,6 @@
       "start": "18:00",
       "end": "19:50",
       "title": "Entardecer no Meu Pago",
-      "description": "Programa musical gauchesco com participação dos ouvintes.",
       "category": "musical"
     },
     {
@@ -65,7 +101,6 @@
       "start": "19:00",
       "end": "20:00",
       "title": "A Voz do Brasil",
-      "description": "Programa oficial de notícias do governo.",
       "category": "noticias"
     },
     {
@@ -73,7 +108,6 @@
       "start": "20:10",
       "end": "22:00",
       "title": "A Música da Nossa Gente",
-      "description": "Programa musical com quatro gêneros: gaúcha, sertaneja, bandas e nativas.",
       "category": "musical"
     },
     {
@@ -81,48 +115,68 @@
       "start": "20:10",
       "end": "24:00",
       "title": "A Música da Nossa Gente",
-      "description": "Versão estendida do programa musical aos sábados.",
       "category": "musical"
     },
     {
+      "type": "bulletin",
       "days": ["segunda", "terça", "quarta", "quinta", "sexta", "sábado"],
-      "type": "bulletin",
       "times": ["20:30", "21:00", "21:15", "21:30", "22:00", "22:30", "23:00", "23:30"],
-      "title": "Notícias na Tupã",
-      "description": "Boletins com notícias locais, regionais e nacionais.",
-      "category": "noticias"
-    },
-    {
-      "days": ["segunda", "terça", "quarta", "quinta", "sexta"],
-      "start": "22:00",
-      "end": "24:00",
-      "title": "Fim de Noite com a Tupã",
-      "description": "Programação musical automatizada com músicas calmas.",
-      "category": "musical"
-    },
-    {
-      "days": ["segunda", "terça", "quarta", "quinta", "sexta"],
-      "type": "bulletin",
-      "times": ["08:00", "12:00", "18:00"],
-      "title": "Pampa Notícias",
-      "description": "Noticiário em rede com a Rede Pampa.",
-      "category": "noticias"
-    },
-    {
-      "days": ["segunda", "terça", "quarta", "quinta", "sexta"],
-      "type": "bulletin",
-      "times": ["08:30", "10:30", "13:30", "15:30"],
-      "title": "O Mundo em Três Notícias",
-      "description": "Boletins com notícias produzidas pela emissora.",
-      "category": "noticias"
-    },
-    {
-      "days": ["segunda", "terça", "quarta", "quinta", "sexta"],
-      "type": "bulletin",
-      "times": ["11:30", "14:30", "16:30", "18:30"],
-      "title": "Correspondente Tupã",
-      "description": "Boletins informativos com notícias da emissora.",
-      "category": "noticias"
+      "title": "Notícias na Tupã"
     }
-  ]
+  ],
+
+  "video": {
+    "enabled": true,
+    "live_url": "https://youtube.com/live/xxxxx",
+    "thumbnail": "https://tupa.fm.br/assets/video.jpg"
+  },
+
+  "podcasts": [
+    {
+      "title": "Entrevista da Semana",
+      "description": "Os melhores convidados",
+      "audio": "https://tupa.fm.br/podcast/ep1.mp3",
+      "cover": "https://tupa.fm.br/podcast/capa.jpg",
+      "duration": "25:30"
+    }
+  ],
+
+  "social": {
+    "instagram": "https://instagram.com/tupafm",
+    "facebook": "https://facebook.com/tupafm",
+    "youtube": "https://youtube.com/@tupafm",
+    "twitter": "https://twitter.com/tupafm",
+    "whatsapp": "https://wa.me/5599999999999",
+    "site": "https://tupa.fm.br"
+  },
+
+  "contact": {
+    "phone": "+55 34 99999-9999",
+    "email": "contato@tupa.fm.br",
+    "address": "Rua Exemplo, 123"
+  },
+
+  "ads": [
+    {
+      "title": "Anuncie aqui",
+      "image": "https://tupa.fm.br/ads/banner1.jpg",
+      "link": "https://cliente.com"
+    }
+  ],
+
+  "notifications": {
+    "enabled": true,
+    "topics": [
+      "promocoes",
+      "noticias",
+      "esportes",
+      "programacao"
+    ]
+  },
+
+  "app": {
+    "version": "1.0.0",
+    "force_update": false,
+    "maintenance": false
+  }
 }
