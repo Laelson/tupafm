@@ -2,7 +2,7 @@
   "radio": {
     "name": "Tupã FM",
     "slogan": "A rádio que conecta você",
-    "logo": "https://tupa.fm.br/assets/logo.png",
+    "logo": "https://raw.githubusercontent.com/Laelson/tupafm/refs/heads/main/logo.png",
     "background": "https://tupa.fm.br/assets/bg.jpg",
     "cidade": "Tupã",
     "estado": "SP"
